@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QLAB - Official</title>
+<style>
+body{margin:0;background:#0a0a0a;color:white;font-family:Arial;}
+nav{padding:20px 40px;display:flex;justify-content:space-between;background:#111; border-bottom:2px solid #00ff88;}
+.logo{color:#00ff88;font-weight:bold;font-size:24px;}
+.hero{height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+.hero h1{font-size:60px;margin:0;} .hero h1 span{color:#00ff88;}
+.hero p{color:#888;margin:20px;}
+.btn{padding:15px 30px;background:#00ff88;color:black;border:none;font-weight:bold;border-radius:5px;cursor:pointer;font-size:18px;}
+.cards{display:flex;gap:20px;padding:40px;justify-content:center;}
+.card{background:#1a1a1a;padding:25px;border-radius:10px;width:250px;border:1px solid #222;}
+.card h3{color:#00ff88;}
+p{color:white;}
+.card:hover{
+transform: translateY(-10px);
+box-shadow: 0 0 20px #00ff88;
+transition: 0.3s;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<nav><div class="logo">ZLAB</div><div><span onclick="window.scrollTo(0,0)" style="cursor:pointer;">Home</span> | <span onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">Projects</span> | <span onclick="alert('Contact us: Tel : +94710752423 ')" style="cursor:pointer;">Contact</span></div></nav>
+<div class="hero">
+<h1>PERFECT <span>SETUP</span> READY</h1>
+<p>Access Granted 100%</p>
+<button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">EXPLORE NOW</button>
+</div>
+<div class="cards">
+<div class="card"><h3>Fast Setup</h3><p>Click & Work</p></div>
+<div class="card"><h3>Secure Code</h3><p>100% Clean Code</p></div>
+<div class="card"><a href="off.html"><h3>Mobile</h3><p>Can use in Mobile & PC</p></a></div>
+</div>
+<div id="about" style="padding:80px 40px; background:#111; text-align:center;">
+<h2 style="color:#00ff88;">ZLAB PROJECTS</h2>
+<p style="color:#888;">Projects will added by owner</p>
+</div>
+<footer style="padding:30px;text-align:center;background:#000;color:#555;border-top:1px solid #222;">
+<p style="color:grey;">© 2026 ZLAB | Built by HK</p>
+<p style="color:#50ff00ff;">Access Granted</p>
+</footer>
+</body>
+</html>
