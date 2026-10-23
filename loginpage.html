@@ -3,19 +3,26 @@
 <head>
 <title>ZLAB // ACCESS</title>
 <style>
-body{background:#000;color:#ff0000;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh}
-.box{border:2px solid #ff0000;padding:30px;box-shadow:0 0 20px red;text-align:center}
-input{background:#111;border:1px solid red;color:red;padding:10px;margin:10px;width:200px}
-button{background:red;color:black;padding:10px 20px;border:none;font-weight:bold;cursor:pointer}
+body{background:#000;color:red;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.box{border:2px solid red;padding:30px;box-shadow:0 0 25px red;text-align:center;width:320px;background:#000}
+input{background:#111;border:1px solid red;color:red;padding:12px;margin:10px;width:85%}
+button{background:red;color:black;padding:10px 20px;border:none;font-weight:bold;cursor:pointer;margin-top:10px}
+#msg{margin-top:15px;color:#0f0;display:none}
 </style>
 </head>
 <body>
 <div class="box">
 <h1>ZLAB - LAB 01</h1>
 <p>ENTER AGENT CODE</p>
-<input type="text" placeholder="Username"><br>
-<input type="password" placeholder="Password"><br>
-<button>ACCESS</button>
+<input type="text" id="u" placeholder="Username"><br>
+<input type="password" id="p" placeholder="Password"><br>
+<button onclick="go()">ACCESS</button>
+<div id="msg">>> ACCESS GRANTED<br>>> WELCOME AGENT</div>
 </div>
+<script>
+function go(){
+document.getElementById('msg').style.display='block';
+}
+</script>
 </body>
 </html>
